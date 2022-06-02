@@ -45,7 +45,7 @@ x <- list(
 )
 
 purrr::pluck(x, "a", 2)
-#> [1] 1
+#> [1] y
 
 purrr::pluck(x, "c", 1)
 #> NULL
