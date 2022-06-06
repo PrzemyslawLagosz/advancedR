@@ -5,10 +5,10 @@ select <- matrix(ncol = 2, byrow = TRUE, c(
 ))
 
 df <- data.frame(x = 1:3, y = 3:1, z = letters[1:3])
-str(df[df$x == 2 ])
+str(df[df$x == 2, ])
 
 z <- factor(c("a", "b"))
-z[1, drop = T] # <- Drop levels of factor
+z[1, drop = TRUE] # <- Drop levels of factor, if FALSE after subsetting noused levels will be preserve
 
 ### 4.3 Selecting a single element
 
